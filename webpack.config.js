@@ -17,9 +17,6 @@ const WebpackConfig = {
     library: "Prepack",
   },
   mode: "production",
-  optimization: {
-    minimize: true,
-  },
   module: {
     rules: [
       {

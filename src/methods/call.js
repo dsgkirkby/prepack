@@ -323,7 +323,7 @@ export function OrdinaryCallEvaluateBody(
     } else {
       // TODO #1586: abstractRecursionSummarization is disabled for now, as it is likely too limiting
       // (as observed in large internal tests).
-      const abstractRecursionSummarization = false;
+      const abstractRecursionSummarization = true;
       if (!realm.useAbstractInterpretation || realm.pathConditions.length === 0 || !abstractRecursionSummarization)
         return normalCall();
       let savedIsSelfRecursive = F.isSelfRecursive;
